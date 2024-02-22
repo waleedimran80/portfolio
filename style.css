@@ -1,0 +1,199 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+.grid--style {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.background {
+  background-color: whitesmoke;
+  padding: 0.5%;
+  margin: 0.5%;
+  border-style: solid;
+  border-color: rgb(243, 243, 240);
+  border-radius: 5px;
+  font-family: "Barlow Condensed";
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.portfolio--font {
+  letter-spacing: 5px;
+  font-family: "Barlow Condensed";
+}
+
+.main--background {
+  background-color: whitesmoke;
+  padding: 0.5%;
+  margin: 0.5%;
+  border-style: solid;
+  border-color: rgb(243, 243, 240);
+  border-radius: 5px;
+}
+
+h4 {
+  font-family: "QuickSand";
+  font-weight: 300;
+  color: blue !important;
+  font-size: 2.2rem !important;
+}
+
+.text--main-layer {
+  padding-top: 5%;
+  text-align: left;
+  font-family: "QuickSand";
+  font-size: 16px;
+}
+
+.input--email {
+  border-style: none;
+  border-radius: 5px;
+  background-color: rgb(229, 229, 252);
+  padding: 8px;
+  font-family: "QuickSand";
+  font-size: 18px;
+  outline: none;
+}
+
+.email--button {
+  margin-left: 1%;
+  border-radius: 5px;
+  padding: 4.5px;
+  border-color: rgb(211, 211, 211);
+  background-color: rgb(229, 229, 252);
+  font-family: "QuickSand";
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.main--pic {
+  width: 70%;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.progress {
+  width: 25rem;
+}
+
+.text-style {
+  justify-content: left;
+}
+
+.sills--text-layer {
+  text-align: left;
+}
+
+.html-box {
+  width: 50% !important;
+}
+
+.html-text {
+  font-family: "QuickSand";
+}
+
+.education-flex {
+  display: flex;
+  justify-content: center;
+}
+
+.education-left--text {
+  padding-right: 30%;
+  font-family: "QuickSand";
+  font-size: 21px;
+}
+
+.education-right--text {
+  font-family: "QuickSand";
+  font-size: 21px;
+}
+
+.main--background2 {
+  background-color: rgb(185, 185, 185);
+  padding: 2%;
+  margin: 0.5%;
+  border-style: solid;
+  border-color: rgb(243, 243, 240);
+  border-radius: 5px;
+  color: black;
+  font-family: "QuickSand";
+  text-align: center;
+}
+
+
+
+.circle-wrap {
+  margin: 15px auto;
+  width: 150px;
+  height: 150px;
+  background: #fefcff;
+  border-radius: 50%;
+  border: 1px solid #cdcbd0;
+}
+
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle-wrap .circle .mask {
+  clip: rect(0px, 150px, 150px, 75px);
+}
+
+.circle-wrap .inside-circle {
+  width: 122px;
+  height: 122px;
+  border-radius: 50%;
+  background: #d2eaf1;
+  line-height: 120px;
+  text-align: center;
+  margin-top: 14px;
+  margin-left: 14px;
+  color: #1e51dc;
+  position: absolute;
+  z-index: 100;
+  font-weight: 700;
+  font-size: 2em;
+}
+
+/* color animation */
+
+/* 3rd progress bar */
+.mask .fill {
+  clip: rect(0px, 75px, 150px, 0px);
+  background-color: #227ded;
+}
+
+.mask.full,
+.circle .fill {
+  animation: fill ease-in-out 3s;
+  transform: rotate(135deg);
+}
+
+@keyframes fill {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(135deg);
+  }
+}
+body::-webkit-scrollbar {
+  width: 0.4rem;
+}
+body::-webkit-scrollbar-track{
+  background-color: black;
+}
+body::-webkit-scrollbar-thumb{
+  background-color: #1e51dc;
+}
